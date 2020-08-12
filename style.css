@@ -400,15 +400,6 @@ p {
 
 /* -------9------- */
 
-/* .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-} */
-
 #icecream {
   background-color: #8c1d40;
   width: 100px;
@@ -416,12 +407,11 @@ p {
   border-radius: 100%;
   position: relative;
   left: 100px;
-  top: 30px;
+  top: 60px;
+  z-index: 2;
 }
 
-#icecream::after {
-  content: "";
-  position: absolute;
+#drip {
   bottom: 10px;
   left: 0px;
   height: 30px;
@@ -429,7 +419,11 @@ p {
   width: 100px;
   border-radius: 100%;
   z-index: 2;
+  position: relative;
+  left: 100px;
+  top: 30px;
 }
+
 #cone {
   margin-top: -20px;
   height: 0px;
