@@ -12,6 +12,11 @@ h1 {
   font-style: normal;
 }
 
+main {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 p {
   display: inline-block;
 }
@@ -31,7 +36,6 @@ p {
   width: 300px;
   height: 350px;
   margin: 30px;
-  display: inline-block;
 }
 
 .label {
@@ -47,9 +51,75 @@ p {
   text-align: center;
 }
 
-#loops {
+/* -------1------- */
+#house {
+  background-color: #8c1d40;
+  height: 100px;
+  width: 150px;
+  position: relative;
+  left: 70px;
 }
 
+#roof {
+  width: 0;
+  height: 0;
+  border-left: 120px solid transparent;
+  border-right: 120px solid transparent;
+  border-bottom: 120px solid #ffc627;
+  position: relative;
+  left: 30px;
+}
+
+#chimney {
+  background-color: #8c1d40;
+  height: 50px;
+  width: 20px;
+  position: relative;
+  left: 200px;
+  top: 80px;
+}
+
+.houselabel {
+  position: relative;
+  top: 30px;
+}
+
+/* -------2------- */
+#heartbase {
+  background-color: #ffc627;
+  height: 120px;
+  width: 120px;
+  transform: rotate(45deg);
+  position: relative;
+  left: 90px;
+  bottom: 139px;
+}
+
+#heartleft {
+  background-color: #ffc627;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  position: relative;
+  left: 35px;
+  top: 60px;
+}
+
+#heartright {
+  background-color: #ffc627;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  position: relative;
+  left: 130px;
+  bottom: 66px;
+}
+.heartlabel {
+  position: relative;
+  bottom: 70px;
+}
+
+/* -------3------- */
 #box {
   position: relative;
   left: 70px;
@@ -109,6 +179,9 @@ p {
   position: relative;
   bottom: 180px;
 }
+
+/* -------4------- */
+
 #ribbon {
   width: 0;
   height: 150px;
@@ -123,6 +196,256 @@ p {
 #ribbonlabel {
   position: relative;
   top: 120px;
+}
+
+/* -------5------- */
+
+#righteye {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #ffc627;
+  position: relative;
+  left: 170px;
+  top: 60px;
+}
+
+#lefteye {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #ffc627;
+  position: relative;
+  left: 120px;
+  top: 40px;
+}
+
+#smile {
+  width: 200px;
+  height: 100px;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border: 10px solid #ffc627;
+  border-top: 0;
+  position: relative;
+  top: 80px;
+  left: 40px;
+}
+
+.labelsmile {
+  position: relative;
+  top: 150px;
+}
+
+/* -------6------- */
+
+#leftarrsq {
+  width: 80px;
+  height: 50px;
+  background-color: #ffc627;
+  position: relative;
+  left: 20px;
+  top: 120px;
+}
+
+#leftarrtri {
+  width: 0;
+  height: 0;
+  border-top: 70px solid transparent;
+  border-bottom: 70px solid transparent;
+  border-left: 70px solid #ffc627;
+  position: relative;
+  left: 80px;
+  top: 25px;
+}
+
+#rightarrsq {
+  width: 80px;
+  height: 50px;
+  background-color: #8c1d40;
+  position: relative;
+  left: 200px;
+  bottom: 70px;
+}
+
+#rightarrtri {
+  width: 0;
+  height: 0;
+  border-top: 70px solid transparent;
+  border-bottom: 70px solid transparent;
+  border-right: 70px solid #8c1d40;
+  position: relative;
+  left: 150px;
+  bottom: 165px;
+}
+
+.arrowslabel {
+  position: relative;
+  bottom: 80px;
+}
+
+/* -------7------- */
+
+#big {
+  background-color: #8c1d40;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  z-index: 1;
+  position: relative;
+  left: 50px;
+  top: 50px;
+}
+
+#mid {
+  background-color: #ffc627;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  z-index: 2;
+  position: relative;
+  bottom: 110px;
+  left: 90px;
+}
+
+#lil {
+  background-color: #8c1d40;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  z-index: 3;
+  position: relative;
+  bottom: 190px;
+  left: 125px;
+}
+
+.targetlabel {
+  position: relative;
+  bottom: 70px;
+}
+
+/* -------8------- */
+
+#handle {
+  height: 20px;
+  width: 180px;
+  background-color: #ffc627;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: relative;
+  top: 160px;
+  left: 40px;
+}
+
+#bristles {
+  position: relative;
+  left: 190px;
+  top: 120px;
+}
+
+#bristle1 {
+  height: 20px;
+  width: 2px;
+  background-color: #8c1d40;
+}
+
+#bristle2 {
+  height: 20px;
+  width: 2px;
+  background-color: #8c1d40;
+  position: relative;
+  left: 5px;
+  bottom: 20px;
+}
+
+#bristle3 {
+  height: 20px;
+  width: 2px;
+  background-color: #8c1d40;
+  position: relative;
+  left: 10px;
+  bottom: 40px;
+}
+
+#bristle4 {
+  height: 20px;
+  width: 2px;
+  background-color: #8c1d40;
+  position: relative;
+  left: 15px;
+  bottom: 60px;
+}
+
+#bristle5 {
+  height: 20px;
+  width: 2px;
+  background-color: #8c1d40;
+  position: relative;
+  left: 20px;
+  bottom: 80px;
+}
+
+#bristle6 {
+  height: 20px;
+  width: 2px;
+  background-color: #8c1d40;
+  position: relative;
+  left: 25px;
+  bottom: 100px;
+}
+
+.brushlabel {
+  top: 160px;
+}
+
+/* -------9------- */
+
+/* .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+} */
+
+#icecream {
+  background-color: #8c1d40;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: relative;
+  left: 100px;
+  top: 30px;
+}
+
+#icecream::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  height: 30px;
+  background: #8c1d40;
+  width: 100px;
+  border-radius: 100%;
+  z-index: 2;
+}
+#cone {
+  margin-top: -20px;
+  height: 0px;
+  width: 0px;
+  border-right: 45px solid transparent;
+  border-left: 45px solid transparent;
+  border-top: 140px solid #ffc627;
+  z-index: 1;
+  position: relative;
+  left: 105px;
+  top: 30px;
+}
+
+.icecreamlabel {
+  position: relative;
+  top: 80px;
 }
 
 footer {
